@@ -16,9 +16,8 @@ Summary: KDE calendar utility library
 URL: http://kde.org/
 License: GPL
 Group: System/Libraries
-BuildRequires: cmake
-BuildRequires: ninja
 BuildRequires: cmake(ECM)
+BuildRequires: cmake(Grantlee5)
 BuildRequires: cmake(Gettext)
 BuildRequires: cmake(PythonInterp)
 BuildRequires: cmake(KF5KDELibs4Support)
@@ -41,14 +40,14 @@ BuildRequires: cmake(KF5WidgetsAddons)
 
 
 %description
-KDE calendar utility library
+KDE calendar utility library.
 
 %package -n %{libname}
 Summary: KDE calendar utility library
 Group: System/Libraries
 
 %description -n %{libname}
-KDE calendar utility library
+KDE calendar utility library.
 
 %package -n %{devname}
 Summary: Development files for %{name}
