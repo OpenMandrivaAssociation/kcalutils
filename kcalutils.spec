@@ -67,6 +67,10 @@ Development files (Headers etc.) for %{name}.
 %install
 %ninja_install -C build
 
+%files
+%{_libdir}/grantlee/5.0/kcalendar_grantlee_plugin.so
+%{_datadir}/kcalendar/templates/default
+
 %files -n %{libname}
 %{_libdir}/*.so.%{major}*
 %{_libdir}/*.so.4*
