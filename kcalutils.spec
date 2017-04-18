@@ -3,7 +3,7 @@
 %define devname %mklibname KF5CalendarUtils -d
 
 Name: kcalutils
-Version:	17.03.80
+Version:	17.04.0
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
@@ -66,8 +66,9 @@ Development files (Headers etc.) for %{name}.
 
 %install
 %ninja_install -C build
+%find_lang libkcalutils5
 
-%files
+%files -f libkcalutils5.lang
 %{_libdir}/grantlee/*/kcalendar_grantlee_plugin.so
 
 %files -n %{libname}
