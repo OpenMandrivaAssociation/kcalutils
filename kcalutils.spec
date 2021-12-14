@@ -37,7 +37,9 @@ BuildRequires: cmake(KF5IconThemes)
 BuildRequires: cmake(KF5IdentityManagement)
 BuildRequires: cmake(KF5KDELibs4Support)
 BuildRequires: cmake(KF5WidgetsAddons)
-
+# For QCH format docs
+BuildRequires: doxygen
+BuildRequires: qt5-assistant
 
 %description
 KDE calendar utility library.
