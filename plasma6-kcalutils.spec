@@ -24,6 +24,7 @@ BuildRequires: cmake(KF6CalendarCore)
 BuildRequires: cmake(KPim6Akonadi)
 BuildRequires: %mklibname -d KF6IdentityManagement
 BuildRequires: cmake(KF6Holidays)
+BuildRequires: cmake(Qt6)
 BuildRequires: cmake(Qt6Core)
 BuildRequires: cmake(Qt6Gui)
 BuildRequires: cmake(Qt6Test)
