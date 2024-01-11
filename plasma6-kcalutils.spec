@@ -1,9 +1,9 @@
 %define major 6
-%define libname %mklibname KF6CalendarUtils %{major}
+%define libname %mklibname KF6CalendarUtils
 %define devname %mklibname KF6CalendarUtils -d
 
 Name: plasma6-kcalutils
-Version:	24.01.85
+Version:	24.01.90
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
@@ -68,9 +68,9 @@ Development files (Headers etc.) for %{name}.
 
 %install
 %ninja_install -C build
-%find_lang libkcalutils5
+%find_lang libkcalutils6
 
-%files -f libkcalutils5.lang
+%files -f libkcalutils6.lang
 %{_datadir}/qlogging-categories6/kcalutils.categories
 %{_datadir}/qlogging-categories6/kcalutils.renamecategories
 
