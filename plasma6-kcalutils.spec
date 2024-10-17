@@ -20,7 +20,7 @@ Source0:	https://invent.kde.org/pim/kcalutils/-/archive/%{gitbranch}/kcalutils-%
 Source0: http://download.kde.org/%{ftpdir}/release-service/%{version}/src/kcalutils-%{version}.tar.xz
 %endif
 Summary: KDE calendar utility library
-URL: http://kde.org/
+URL: https://kde.org/
 License: GPL
 Group: System/Libraries
 BuildRequires: cmake(ECM)
