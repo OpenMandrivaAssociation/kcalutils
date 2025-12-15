@@ -6,14 +6,14 @@
 %define devname %mklibname KF6CalendarUtils -d
 
 Name: kcalutils
-Version:	25.08.3
+Version:	25.12.0
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
 %else
 %define ftpdir stable
 %endif
-Release:	%{?git:0.%{git}.}2
+Release:	%{?git:0.%{git}.}1
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/pim/kcalutils/-/archive/%{gitbranch}/kcalutils-%{gitbranchd}.tar.bz2#/kcalutils-%{git}.tar.bz2
 %else
